@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[data-theme="light"] {
+  --color-bg: #86b88f;
+  --color-fg: #09492F;
+}
+
+[data-theme="dark"] {
+  --color-bg: #09492F;
+  --color-fg: #86b88f;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  display: grid;
+  justify-content: center;
+  place-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.dark-btn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all var(--global-transition-time) ease-in-out;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  border: 0.25rem solid var(--color-fg);
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #09492F;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #44834E;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 350px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.todo-input::placeholder {
+  color: #78ba84de;
+  font-size: 0.9rem;
+}
+
+.todo-btn {
+  background: #44834E;
+  color: #fff;
+  border: none;
+  padding: 0.57rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #488b54;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #ffffffcc;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.delete-btn {
+  cursor: pointer;
+  transition: opacity 2s ease-in-out;
+}
+
+.edit-btn {
+  cursor: pointer;
+}
