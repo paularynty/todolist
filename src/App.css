@@ -7,19 +7,9 @@
   box-sizing: border-box;
 }
 
-[data-theme="light"] {
-  --color-bg: #86b88f;
-  --color-fg: #09492F;
-}
-
-[data-theme="dark"] {
-  --color-bg: #09492F;
-  --color-fg: #86b88f;
-}
-
 body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  background-color: #86b88f;
+  color: #09492F;
   display: grid;
   justify-content: center;
   place-items: center;
@@ -27,18 +17,6 @@ body {
 
 .App {
   text-align: center;
-}
-
-.dark-btn {
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  transition: all var(--global-transition-time) ease-in-out;
-  border-radius: 2rem;
-  cursor: pointer;
-  color: var(--color-fg);
-  background-color: var(--color-bg);
-  border: 0.25rem solid var(--color-fg);
 }
 
 h1 {
