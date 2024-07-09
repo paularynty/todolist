@@ -7,9 +7,36 @@
   box-sizing: border-box;
 }
 
+:root{
+ --primary-bg: #44834E;
+ --secondary-bg: #86b88f;
+ --title-color: #09492F;
+ --text-color: #d0fbd7;
+ --input-color: #09492F;
+ --icon-color: #d0fbd7;
+}
+
+.dark-theme{
+  --primary-bg: #09492F;
+  --secondary-bg: #03291a;
+  --title-color: #d0fbd7;
+  --text-color: #d0fbd7;
+  --input-color: #44834E;
+  --icon-color: #d0fbd7;
+}
+
+.dark-mode-toggle-button{
+  background: none;
+  border: none;
+  padding: 0;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
 body {
-  background-color: #86b88f;
-  color: #09492F;
+  background-color: var(--primary-bg);
+  color: var(--secondary-bg);
   display: grid;
   justify-content: center;
   place-items: center;
@@ -20,13 +47,13 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: var(--title-color);
   margin-bottom: 2rem;
   font-size: 1.75rem;
 }
 
 .TodoWrapper {
-  background: #09492F;
+  background: var(--secondary-bg);
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -40,25 +67,25 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #44834E;
+  border: 1px solid var(--input-color);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 350px;
-  color: #fff;
+  color: var(--input-color);
   font-size: 0.9rem;
 }
 
 .todo-input::placeholder {
-  color: #78ba84de;
+  color: var(--input-color);
   font-size: 0.9rem;
 }
 
 .todo-btn {
-  background: #44834E;
-  color: #fff;
+  background: var(--input-color);
+  color: var(--text-color);
   border: none;
   padding: 0.57rem;
   border-top-right-radius: 5px;
@@ -71,8 +98,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #488b54;
-  color: #fff;
+  background: var(--input-color);
+  color: var(--icon-color);
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
@@ -84,12 +111,12 @@ h1 {
 }
 
 .incompleted {
-  color: #fff;
+  color: var(--text-color);
   cursor: pointer;
 }
 
 .completed {
-  color: #ffffffcc;
+  color: var(--text-color);
   text-decoration: line-through;
   cursor: pointer;
 }
