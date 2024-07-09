@@ -8,8 +8,8 @@ export const Todo = ({task, toggleComplete, deleteTodo, editTodo}) => {
             <p onClick={() => toggleComplete(task.id)} 
             className = {`${task.completed ? 'completed': ""}`}>{task.task}</p>
             <div>
-                <FontAwesomeIcon icon={faPenToSquare} onClick={() => editTodo(task.id)}/>
-                <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(task.id)} />
+                <FontAwesomeIcon icon={faPenToSquare} className='edit-btn' onClick={() => editTodo(task.id)}/>
+                <FontAwesomeIcon icon={faTrash} className='delete-btn' onClick={() => deleteTodo(task.id)} />
             </div>
         </div>
     )

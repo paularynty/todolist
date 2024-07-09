@@ -8,10 +8,11 @@
 }
 
 body {
-  background: #86b88f;
-  display: flex;
+  background-color: #86b88f;
+  color: #09492F;
+  display: grid;
   justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 .App {
@@ -25,7 +26,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #0b4a30;
+  background: #09492F;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -39,7 +40,7 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #488152;
+  border: 1px solid #44834E;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 0.5rem 1rem;
@@ -51,12 +52,12 @@ h1 {
 }
 
 .todo-input::placeholder {
-  color: #ffffff4d;
+  color: #78ba84de;
   font-size: 0.9rem;
 }
 
 .todo-btn {
-  background: #488b54;
+  background: #44834E;
   color: #fff;
   border: none;
   padding: 0.57rem;
@@ -75,6 +76,7 @@ h1 {
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .fa-trash {
@@ -92,7 +94,11 @@ h1 {
   cursor: pointer;
 }
 
-.edit-icon,
-.delete-icon {
+.delete-btn {
+  cursor: pointer;
+  transition: opacity 2s ease-in-out;
+}
+
+.edit-btn {
   cursor: pointer;
 }
